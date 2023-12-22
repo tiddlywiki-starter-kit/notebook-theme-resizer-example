@@ -4,7 +4,7 @@
   "description": "TiddlyWiki5 GettingStart",
   "scripts": {
     "start": "tiddlywiki --listen",
-    "build": "tiddlywiki --build"
+    "build": "tiddlywiki --output docs --build"
   },
   "keywords": [
     "template",
