@@ -1,2 +1,2 @@
-list: $:/ControlPanel $:/plugins/oeyoews/notebook-theme-sidebar-resizer
+list: $:/plugins/oeyoews/notebook-theme-sidebar-resizer $:/themes/cdr/captivate/ui/SideBar
 title: $:/StoryList
