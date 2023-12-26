@@ -4,16 +4,23 @@
   "description": "TiddlyWiki5 GettingStart",
   "scripts": {
     "dev": "tiddlywiki --listen",
-    "build": "tiddlywiki --output docs --build"
+    "build": "tiddlywiki --output docs --build",
+    "prepare": "simple-git-hooks"
   },
   "keywords": [
     "template",
     "tiddlywiki",
     "nodejs"
   ],
+  "simple-git-hooks": {
+    "pre-commit": "pnpm build"
+  },
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "tiddlywiki": "5.3.1"
+  },
+  "devDependencies": {
+    "simple-git-hooks": "^2.9.0"
   }
 }
