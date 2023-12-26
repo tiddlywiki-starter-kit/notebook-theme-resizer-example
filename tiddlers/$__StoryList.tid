@@ -1,2 +1,3 @@
 list: $:/Import $:/themes/jd/Whitespace/Stylesheet/StoriesPluginCompatibility $:/themes/jd/Whitespace $:/themes/jd/Whitespace/template/sidebar $:/plugins/oeyoews/notebook-theme-sidebar-resizer
 title: $:/StoryList
+type: text/vnd.tiddlywiki

@@ -1,6 +1,6 @@
 created: 20171201152819844
 creator: JD
-modified: 20231226172229065
+modified: 20231226173313160
 modifier: jd
 tags: $:/tags/PageTemplate
 title: $:/themes/jd/Whitespace/template/sidebar
@@ -154,7 +154,7 @@ $:/config/SideBar/Visibility/$(currentTiddler)$
 <div class="jd-sidebar-column-body">
 
 <$transclude/>
-<$nbresizer />
+
 
 </div>
 </$list>
@@ -163,4 +163,5 @@ $:/config/SideBar/Visibility/$(currentTiddler)$
 </$list>
 <div style="height:32px;">
 </div>
+<$nbresizer />
 </$scrollable>
