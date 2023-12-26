@@ -13,7 +13,7 @@
     "nodejs"
   ],
   "simple-git-hooks": {
-    "pre-commit": "pnpm build"
+    "pre-add": "pnpm build"
   },
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
