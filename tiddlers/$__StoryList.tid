@@ -1,2 +1,5 @@
-list: $:/plugins/oeyoews/notebook-theme-sidebar-resizer $:/themes/cdr/captivate/ui/SideBar
+created: 20231226172213823
+list: $:/Import $:/themes/jd/Whitespace/Stylesheet/StoriesPluginCompatibility $:/themes/jd/Whitespace $:/themes/jd/Whitespace/template/sidebar $:/plugins/oeyoews/notebook-theme-sidebar-resizer
+modified: 20231226172213823
 title: $:/StoryList
+type: text/vnd.tiddlywiki

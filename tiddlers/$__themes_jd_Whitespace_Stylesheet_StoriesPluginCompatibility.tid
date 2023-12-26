@@ -1,0 +1,103 @@
+created: 20200727001543265
+creator: jd
+modified: 20200727022035709
+modifier: jd
+tags: $:/tags/Stylesheet
+title: $:/themes/jd/Whitespace/Stylesheet/StoriesPluginCompatibility
+type: text/vnd.tiddlywiki
+
+/*  FOR STORIES PLUGIN */
+
+/*  https://giffmex.org/stroll/empty.html#%24%3A%2Fplugins%2Fsq%2FStories  */
+
+/*  this stylesheet will apply with the existence of the plugin  */
+
+<$list filter="[[$:/plugins/sq/Stories]is[tiddler]]" variable="chk">
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) { 
+
+.tc-story-river {
+    transition: width 250ms, padding 250ms;
+<$reveal state="$:/config/_sq/Stories/story2" type="nomatch" text="no" default="no">
+<$list filter="[list[$:/_sq/Stories/Story2StoryList]limit[1]]">
+<$reveal state="$:/state/sidebar" type="match" text="yes" default="yes">
+    width: calc(50% - {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}} / 2) !important;
+    padding: 42px .5em 42px 1em !important;
+</$reveal>
+<$reveal state="$:/state/sidebar" type="match" text="no" default="yes">
+    width: 50% !important;
+    padding: 42px .5em 42px 50px !important;
+</$reveal>
+</$list>
+</$reveal>
+}
+
+<$reveal state="$:/config/_sq/Stories/story2" type="nomatch" text="no" default="no">
+.tc-story-river.tc-storytwo-river {
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.sq-story-rivertwo-scrollable {
+    top: 0;
+    width: 100%;
+    transition: width 250ms, padding 250ms, right 250ms;
+<$list filter="[[$:/StoryList]field:list[]]">
+    left: 0 !important; 
+<$reveal state="$:/state/sidebar" type="match" text="yes" default="yes">
+    padding-top: 42px;
+    padding-bottom: 42px;
+<$list filter="[[$:/themes/jd/Whitespace/config]sidebar-position[left]]"> 
+    padding-left: calc({{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}} + 2em);
+    padding-right: 2em;
+</$list>
+<$list filter="[[$:/themes/jd/Whitespace/config]!sidebar-position[left]]">
+    padding-left: 2em;
+    padding-right: calc({{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}} + 2em);
+</$list>
+</$reveal>
+<$reveal state="$:/state/sidebar" type="match" text="no" default="yes">
+    padding: 42px 10%;
+</$reveal>
+</$list>
+<$list filter="[list[$:/StoryList]limit[1]]">
+    left: unset !important; 
+<$reveal state="$:/state/sidebar" type="match" text="yes" default="yes">
+    width: calc(50% - {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}} / 2) !important;
+    padding-top: calc(42px + 1em);
+    padding-right: 1em;
+    padding-bottom: 42px;
+    padding-left: 0.5em;
+<$list filter="[[$:/themes/jd/Whitespace/config]sidebar-position[left]]"> 
+    right: 0 !important;
+</$list>
+<$list filter="[[$:/themes/jd/Whitespace/config]!sidebar-position[left]]">
+    right: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}}; 
+</$list>
+</$reveal>
+<$reveal state="$:/state/sidebar" type="match" text="no" default="yes">
+    width: calc(49% + .5em) !important;
+    padding-top: calc(42px + 1em);
+    padding-right: 50px;
+    padding-bottom: 42px;
+    padding-left: 0.5em;
+<$list filter="[[$:/themes/jd/Whitespace/config]sidebar-position[left]]"> 
+    right: 0 !important;
+</$list>
+<$list filter="[[$:/themes/jd/Whitespace/config]!sidebar-position[left]]">
+    right: 0; 
+</$list>
+</$reveal>
+</$list>
+}
+</$reveal>
+
+.tc-tiddler-frame {
+    width: 100% !important;
+}
+
+}
+
+</$list>

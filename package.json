@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "TiddlyWiki5 GettingStart",
   "scripts": {
-    "start": "tiddlywiki --listen",
+    "dev": "tiddlywiki --listen",
     "build": "tiddlywiki --output docs --build"
   },
   "keywords": [
