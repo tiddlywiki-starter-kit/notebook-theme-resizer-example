@@ -1,2 +1,5 @@
-list: GettingStarted
+created: 20240126064022664
+list: $:/ControlPanel $:/themes/tiddlywiki/vanilla/options/sidebarlayout $:/plugins/oeyoews/notebook-theme-sidebar-resizer GettingStarted
+modified: 20240126064121582
 title: $:/StoryList
+type: text/vnd.tiddlywiki
